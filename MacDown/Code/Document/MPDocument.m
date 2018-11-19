@@ -191,6 +191,11 @@ typedef NS_ENUM(NSUInteger, MPWordCountType) {
 @property (weak) IBOutlet WebView *preview;
 @property (weak) IBOutlet NSPopUpButton *wordCountWidget;
 @property (strong) IBOutlet MPToolbarController *toolbarController;
+@property (weak) IBOutlet NSTouchBar *touchBar;
+@property (weak) IBOutlet NSPopoverTouchBarItem *wordCountPopover;
+@property (weak) IBOutlet NSButton *wordsTouchButton;
+@property (weak) IBOutlet NSButton *charTouchButton;
+@property (weak) IBOutlet NSButton *charNoSpacesTouchButton;
 @property (copy, nonatomic) NSString *autosaveName;
 @property (strong) HGMarkdownHighlighter *highlighter;
 @property (strong) MPRenderer *renderer;
@@ -306,6 +311,8 @@ static void (^MPGetPreviewLoadingCompletionHandler(MPDocument *doc))()
     self.wordsMenuItem.title =
         [JJPluralForm pluralStringForNumber:value withPluralForms:key
                             usingPluralRule:rule localizeNumeral:NO];
+    self.wordsTouchButton.title = [JJPluralForm pluralStringForNumber:value withPluralForms:key
+                                                       usingPluralRule:rule localizeNumeral:NO];
 }
 
 - (void)setTotalCharacters:(NSUInteger)value
@@ -316,6 +323,8 @@ static void (^MPGetPreviewLoadingCompletionHandler(MPDocument *doc))()
     self.charMenuItem.title =
         [JJPluralForm pluralStringForNumber:value withPluralForms:key
                             usingPluralRule:rule localizeNumeral:NO];
+    self.charTouchButton.title = [JJPluralForm pluralStringForNumber:value withPluralForms:key
+                                                      usingPluralRule:rule localizeNumeral:NO];
 }
 
 - (void)setTotalCharactersNoSpaces:(NSUInteger)value
@@ -327,6 +336,8 @@ static void (^MPGetPreviewLoadingCompletionHandler(MPDocument *doc))()
     self.charNoSpacesMenuItem.title =
         [JJPluralForm pluralStringForNumber:value withPluralForms:key
                             usingPluralRule:rule localizeNumeral:NO];
+    self.charNoSpacesTouchButton.title = [JJPluralForm pluralStringForNumber:value withPluralForms:key
+                                                              usingPluralRule:rule localizeNumeral:NO];
 }
 
 - (void)setAutosaveName:(NSString *)autosaveName
@@ -1898,6 +1909,9 @@ static void (^MPGetPreviewLoadingCompletionHandler(MPDocument *doc))()
     self.totalWords = count.words;
     self.totalCharacters = count.characters;
     self.totalCharactersNoSpaces = count.characterWithoutSpaces;
+    
+    // TODO: Use preferred
+    self.wordCountPopover.collapsedRepresentationLabel = self.wordsTouchButton.title;
 
     if (self.isPreviewReady)
         self.wordCountWidget.enabled = YES;
