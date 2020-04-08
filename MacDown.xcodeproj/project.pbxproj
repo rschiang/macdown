@@ -486,6 +486,16 @@
 		1FFEB32A19737D6E00B2254F /* YAMLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAMLSerialization.m; sourceTree = "<group>"; };
 		1FFF301C1948A5320009AF24 /* MPStringLookupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPStringLookupTests.m; sourceTree = "<group>"; };
 		263367245B2D78A42C2F19D7 /* libPods-macdown-cmd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-macdown-cmd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8EC6DA243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2B8EC6DB243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2B8EC6DC243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/MPExportPanelAccessoryViewController.strings"; sourceTree = "<group>"; };
+		2B8EC6DD243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		2B8EC6DE243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/MPTerminalPreferencesViewController.strings"; sourceTree = "<group>"; };
+		2B8EC6DF243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/MPHtmlPreferencesViewController.strings"; sourceTree = "<group>"; };
+		2B8EC6E0243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/MPEditorPreferencesViewController.strings"; sourceTree = "<group>"; };
+		2B8EC6E1243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/MPGeneralPreferencesViewController.strings"; sourceTree = "<group>"; };
+		2B8EC6E2243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/MPDocument.strings"; sourceTree = "<group>"; };
+		2B8EC6E3243DE23C00BB58F2 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "Localization/zh-TW.lproj/MPMarkdownPreferencesViewController.strings"; sourceTree = "<group>"; };
 		3028039D1FD84EAB0055B0DA /* contribute.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = contribute.md; path = Resources/contribute.md; sourceTree = "<group>"; };
 		39EFCAE04F60154F0C8C5469 /* Pods-MacDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacDown.release.xcconfig"; path = "Pods/Target Support Files/Pods-MacDown/Pods-MacDown.release.xcconfig"; sourceTree = "<group>"; };
 		3C949FDE45493AE77DAD9BF4 /* libPods-MacDownTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MacDownTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1011,6 +1021,7 @@
 				cs,
 				"da-DK",
 				da,
+				"zh-TW",
 			);
 			mainGroup = 1FA6DE181941CC9E000409FB;
 			productRefGroup = 1FA6DE221941CC9E000409FB /* Products */;
@@ -1341,6 +1352,7 @@
 				E744518C241C934C00D9ABD9 /* cs */,
 				E77E5D6C241C935100699B5A /* da-DK */,
 				E7DD09F1241C9368008FBC25 /* da */,
+				2B8EC6DD243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1371,6 +1383,7 @@
 				E70ECDD7241C933C00537A46 /* ru-RU */,
 				E7445191241C934C00D9ABD9 /* cs */,
 				E77E5D72241C935100699B5A /* da-DK */,
+				2B8EC6E2243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = MPDocument.xib;
 			path = ../..;
@@ -1401,6 +1414,7 @@
 				1FB813A82099A228004EC5D7 /* et */,
 				E744518F241C934C00D9ABD9 /* cs */,
 				E77E5D6F241C935100699B5A /* da-DK */,
+				2B8EC6E0243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = MPEditorPreferencesViewController.xib;
 			path = ../..;
@@ -1431,6 +1445,7 @@
 				1FB813A72099A228004EC5D7 /* et */,
 				E744518E241C934C00D9ABD9 /* cs */,
 				E77E5D6D241C935100699B5A /* da-DK */,
+				2B8EC6DF243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = MPHtmlPreferencesViewController.xib;
 			path = ../..;
@@ -1462,6 +1477,7 @@
 				E70ECDD6241C933C00537A46 /* ru-RU */,
 				E7445192241C934C00D9ABD9 /* cs */,
 				E77E5D71241C935100699B5A /* da-DK */,
+				2B8EC6E3243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = MPMarkdownPreferencesViewController.xib;
 			path = ../..;
@@ -1506,6 +1522,7 @@
 				1F2ABCFE1F38108E005FB620 /* is */,
 				1F2ABCFF1F381090005FB620 /* fr */,
 				E7543774241C935F00F181F1 /* nl-NL */,
+				2B8EC6DA243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1536,6 +1553,7 @@
 				E70ECDD4241C933C00537A46 /* ru-RU */,
 				E744518B241C934C00D9ABD9 /* cs */,
 				E77E5D6A241C935100699B5A /* da-DK */,
+				2B8EC6DB243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1565,6 +1583,7 @@
 				1FB813A62099A228004EC5D7 /* et */,
 				E744518D241C934C00D9ABD9 /* cs */,
 				E77E5D6E241C935100699B5A /* da-DK */,
+				2B8EC6DE243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = MPTerminalPreferencesViewController.xib;
 			path = ../../Localization;
@@ -1595,6 +1614,7 @@
 				1FB813A42099A228004EC5D7 /* et */,
 				E744518A241C934C00D9ABD9 /* cs */,
 				E77E5D6B241C935100699B5A /* da-DK */,
+				2B8EC6DC243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = MPExportPanelAccessoryViewController.xib;
 			sourceTree = "<group>";
@@ -1624,6 +1644,7 @@
 				1FB813A92099A228004EC5D7 /* et */,
 				E7445190241C934C00D9ABD9 /* cs */,
 				E77E5D70241C935100699B5A /* da-DK */,
+				2B8EC6E1243DE23C00BB58F2 /* zh-TW */,
 			);
 			name = MPGeneralPreferencesViewController.xib;
 			path = ../..;
