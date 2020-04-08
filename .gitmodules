@@ -1,3 +1,7 @@
 [submodule "Dependency/prism"]
 	path = Dependency/prism
 	url = https://github.com/PrismJS/prism.git
+[submodule "Dependency/hoedown"]
+	path = Dependency/hoedown
+	url = https://github.com/rschiang/hoedown.git
+	branch = dev

@@ -988,7 +988,8 @@ static void (^MPGetPreviewLoadingCompletionHandler(MPDocument *doc))()
 
 - (int)rendererExtensions:(MPRenderer *)renderer
 {
-    return self.preferences.extensionFlags;
+    // Force enable citations and ruby
+    return self.preferences.extensionFlags | HOEDOWN_EXT_CITE | HOEDOWN_EXT_RUBY;
 }
 
 - (BOOL)rendererHasSmartyPants:(MPRenderer *)renderer
