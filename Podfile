@@ -1,6 +1,6 @@
 platform :osx, "10.8"
 
-source 'https://github.com/MacDownApp/cocoapods-specs.git'  # Patched libraries.
+source 'https://github.com/rschiang/macdown-cocoapods-specs.git'  # Patched libraries.
 source 'https://cdn.cocoapods.org/'
 
 project 'MacDown.xcodeproj'
@@ -9,6 +9,7 @@ inhibit_all_warnings!
 
 target "MacDown" do
   pod 'handlebars-objc', '~> 1.4'
+  pod 'cmark-gfm', '~> 0.29.0', :inhibit_warnings => false
   pod 'JJPluralForm', '~> 2.1'
   pod 'LibYAML', '~> 0.1'
   pod 'M13OrderedDictionary', '~> 1.1'
